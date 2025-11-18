@@ -108,7 +108,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
           
           <div className="flex items-center space-x-4">
             <button 
-              className="bg-white/80 text-black/80 px-6 py-2 rounded-full font-medium hover:bg-white transition-colors hidden md:block"
+              className="bg-white/80 text-black/80 px-6 py-2 pb-1 rounded-full font-bold hover:bg-white transition-colors hidden md:block"
               onClick={() => handleLinkClick('contact')}
               aria-label="Contact us"
             >
