@@ -112,8 +112,8 @@ function Card3D({ project }: { project: Project }) {
             : 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease-out',
           transformStyle: 'preserve-3d',
           boxShadow: isHovered 
-            ? '0 35px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(200, 200, 200, 0.1), inset 0 0 15px rgba(255, 255, 255, 0.05)' 
-            : '0 10px 25px -5px rgba(0, 0, 0, 0.5), inset 0 0 8px rgba(255, 255, 255, 0.02)',
+            ? '0 35px 60px -15px rgba(0, 0, 0, 0.2), 0 0 40px rgba(200, 200, 200, 0.1), inset 0 0 15px rgba(255, 255, 255, 0.02)' 
+            : '0 10px 25px -5px rgba(255, 255, 255, 0.02), inset 0 0 8px rgba(255, 255, 255, 0.02)',
         }}
       >
         {/* Monochrome gradient glow */}
@@ -130,7 +130,7 @@ function Card3D({ project }: { project: Project }) {
           className="absolute -inset-0.5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
           style={{
             transform: 'translateZ(-2px)',
-            filter: 'blur(8px)',
+            filter: 'blur(4px)',
           }}
         />
         
@@ -140,12 +140,12 @@ function Card3D({ project }: { project: Project }) {
           style={{
             background: `linear-gradient(60deg, 
               transparent 0%, 
-              rgba(255,255,255,0.3) 20%, 
+              rgba(255,255,255,0.2) 20%, 
               transparent 30%, 
               transparent 40%, 
-              rgba(255,255,255,0.3) 50%, 
+              rgba(255,255,255,0.2) 50%, 
               transparent 60%, 
-              rgba(255,255,255,0.3) 80%, 
+              rgba(255,255,255,0.2) 80%, 
               transparent 100%)`,
             backgroundSize: '300% 300%',
             animation: isHovered ? 'shimmer 3s ease-in-out infinite' : 'none',
@@ -167,22 +167,49 @@ function Card3D({ project }: { project: Project }) {
             <div 
               className="transition-all duration-300 ease-out"
               style={{
-                transform: isHovered ? 'translateZ(40px) scale(1.15)' : 'translateZ(0px) scale(1)',
-                filter: isHovered ? 'drop-shadow(0 10px 15px rgba(200, 200, 200, 0.2))' : 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
+                transform: isHovered ? 'translateZ(60px) scale(1.25) rotateX(8deg) rotateY(8deg)' : 'translateZ(0px) scale(1) rotateX(0deg) rotateY(0deg)',
+                filter: isHovered ? 'drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1))' : 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
               }}
             >
               {project.icon === 'star' && (
-                <svg className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                  className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" 
+                  fill="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    transform: isHovered ? 'translateZ(70px) rotateX(-8deg) rotateY(-8deg)' : 'translateZ(0px) rotateX(0deg) rotateY(0deg)',
+                    filter: isHovered ? 'drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1))' : 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
+                  }}
+                >
                   <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
               )}
               {project.icon === 'heart' && (
-                <svg className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                  className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" 
+                  fill="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    transform: isHovered ? 'translateZ(70px) rotateX(-8deg) rotateY(-8deg)' : 'translateZ(0px) rotateX(0deg) rotateY(0deg)',
+                    filter: isHovered ? 'drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1))' : 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
+                  }}
+                >
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.5 11.5l-1.5 1.34z" />
                 </svg>
               )}
               {project.icon === 'music' && (
-                <svg className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                  className="w-24 h-24 text-gray-300 md:w-24 md:h-24 w-16 h-16" 
+                  fill="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    transform: isHovered ? 'translateZ(70px) rotateX(-8deg) rotateY(-8deg)' : 'translateZ(0px) rotateX(0deg) rotateY(0deg)',
+                    filter: isHovered ? 'drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1))' : 'drop-shadow(0 4px 6px rgba(0,0,0,0.2))'
+                  }}
+                >
                   <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
                 </svg>
               )}
@@ -219,7 +246,17 @@ function Card3D({ project }: { project: Project }) {
               transform: isHovered ? 'translateZ(15px)' : 'translateZ(0px)'
             }}
           >
-            <svg className="w-5 h-5  transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg 
+              className="w-5 h-5 transition-colors" 
+              fill="none"
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                transform: isHovered ? 'translateZ(20px) rotateX(-3deg) rotateY(-3deg)' : 'translateZ(0px) rotateX(0deg) rotateY(0deg)',
+                filter: isHovered ? 'drop-shadow(0 4px 6px rgba(200, 200, 200, 0.2))' : 'drop-shadow(0 2px 3px rgba(0,0,0,0.2))'
+              }}
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </div>
