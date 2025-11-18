@@ -44,17 +44,17 @@ export default function OurWork() {
               <div key={project.id} className="rounded-lg p-6 border border-white/20 hover:border-white/30 transition-colors backdrop-blur-xl bg-white/5">
                 <div className="w-full h-48 mb-4 flex items-center justify-center">
                   {project.icon === 'star' && (
-                    <svg className="w-24 h-24 text-blue-400 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L14.5 8H20L15.5 11.5L17 18H10L8.5 11.5L4 8H9.5L12 2Z" />
+                    <svg className="w-24 h-24 text-white/80 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
                   )}
                   {project.icon === 'heart' && (
-                    <svg className="w-24 h-24 text-blue-400 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-24 h-24 text-white/80 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.5 11.5l-1.5 1.34z" />
                     </svg>
                   )}
                   {project.icon === 'music' && (
-                    <svg className="w-24 h-24 text-blue-400 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-24 h-24 text-white/80 md:w-24 md:h-24 w-16 h-16" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
                     </svg>
                   )}
