@@ -10,9 +10,24 @@ export default function Contact() {
             <div>
               <h3 className="text-3xl text-white/80 font-semibold mb-2">SOCIAL MEDIA</h3>
               <div className="space-y-2">
-                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer">INSTAGRAM</div>
-                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer">FACEBOOK</div>
-                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer">TIKTOK</div>
+                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center">
+                  INSTAGRAM
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center">
+                  FACEBOOK
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <div className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center">
+                  TIKTOK
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div>
@@ -23,7 +38,6 @@ export default function Contact() {
                 <p>Dari Selatan Ke Sunda</p>
                 <p>Blok. Jawa. No, Rekening</p>
               </div>
-
             </div>  
           </div>
         </div>
