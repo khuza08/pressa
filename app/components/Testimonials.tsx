@@ -1,0 +1,48 @@
+interface Testimonial {
+  id: number;
+  quote: string;
+  author: string;
+}
+
+const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    quote: "Working with was an amazing experience. They truly understood our brand vision and were able to translate it into a captivating website design.",
+    author: "Sarah Johson"
+  },
+  {
+    id: 2,
+    quote: "Since using the website created by pressa we have seen a significant increase in user engagement. The design is responsive and attractive.",
+    author: "Mark Gilbert"
+  },
+  {
+    id: 3,
+    quote: "We were very impressed by the attention to detail and quick response from the pressa team. Our website is now a valuable asset for our brand.",
+    author: "James M."
+  },
+  {
+    id: 4,
+    quote: "pressa delivered the website we dreamed of. The process was smooth, communication was clear, and the final result exceeded our expectations.",
+    author: "Crazy Dave"
+  }
+];
+
+export default function Testimonials() {
+  return (
+    <section id="testimonials" className="py-20 bg-black">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
+        </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-gray-900 p-6 rounded-lg border border-gray-700">
+              <p className="text-gray-300 mb-6">{testimonial.quote}</p>
+              <p className="text-gray-400 text-right">- {testimonial.author}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
