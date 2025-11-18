@@ -6,7 +6,7 @@ export default function Hero() {
           Where <span className="text-white/50">Fashion</span> Meets <br />
           Digital Elevation
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl mx-auto">
           We craft websites that are not only visually stunning but also strengthen your fashion brand's identity and make it easier for customers to find you online.
         </p>
       </div>
