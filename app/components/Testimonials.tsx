@@ -32,13 +32,13 @@ export default function Testimonials() {
     <section id="testimonials" className="py-20 ">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white/80">What Our Clients Say</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 rounded-lg border border-gray-700">
-              <p className="text-gray-300 mb-6">{testimonial.quote}</p>
-              <p className="text-gray-400 text-right">- {testimonial.author}</p>
+            <div key={index} className="p-6 rounded-lg border border-white/20 bg-white/5">
+              <p className="text-white/50 mb-6">{testimonial.quote}</p>
+              <p className="text-white/80 text-right">- {testimonial.author}</p>
             </div>
           ))}
         </div>

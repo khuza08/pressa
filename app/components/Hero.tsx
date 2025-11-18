@@ -3,10 +3,10 @@ export default function Hero() {
     <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
       <div className="text-center z-10 max-w-4xl px-6 flex-grow flex flex-col justify-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Where <span className="text-purple-400">Fashion</span> Meets <br />
+          Where <span className="text-white/50">Fashion</span> Meets <br />
           Digital Elevation
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
           We craft websites that are not only visually stunning but also strengthen your fashion brand's identity and make it easier for customers to find you online.
         </p>
       </div>

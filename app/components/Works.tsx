@@ -36,12 +36,13 @@ export default function OurWork() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start mb-16">
           <div className="md:w-1/3 mb-8 md:mb-0">
-            <h2 className="text-4xl font-bold mb-2">OUR WORK</h2>
-            <p className="text-xl text-gray-400">CRAFTED WITH LOVE</p>
+            <h2 className="text-4xl font-bold text-white/80">OUR WORK</h2>
+            <p className="text-xl text-white/50">CRAFTED WITH LOVE</p>
           </div>
           <div className="md:w-2/3 grid md:grid-cols-3 gap-6">
             {projects.map((project) => (
-              <div key={project.id} className="rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors">
+              <div key={project.id} className="rounded-lg p-6 border border-white/20 hover:border-white/30 transition-colors backdrop-blur-xl \
+              bg-white/5">
                 <div className="w-full h-48 mb-4 flex items-center justify-center">
                   {project.icon === 'star' && (
                     <svg className="w-24 h-24 text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

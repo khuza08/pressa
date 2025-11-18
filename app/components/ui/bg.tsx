@@ -147,7 +147,7 @@ const blobs = useRef<Blob[]>([
         // Highlight active blob
         const opacityMultiplier = blob.isFollowing ? 1.3 : 1;
         gradient.addColorStop(0, `rgba(255, 255, 255, ${blob.opacity * opacityMultiplier})`);
-        gradient.addColorStop(0.5, `rgba(255, 255, 255, ${blob.opacity * 0.4 * opacityMultiplier})`);
+        gradient.addColorStop(0.5, `rgba(255, 255, 255, ${blob.opacity * 0.8 * opacityMultiplier})`);
         gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
         
         ctx.fillStyle = gradient;
@@ -172,7 +172,7 @@ const blobs = useRef<Blob[]>([
     <canvas
       ref={canvasRef}
       className="fixed inset-0 -z-10 pointer-events-none"
-      style={{ filter: 'blur(60px)' }}
+      style={{ filter: 'blur(256px)'}}
     />
   );
 }
