@@ -1,4 +1,5 @@
 import './globals.css'
+import BgGradient from "./components/ui/bg";
 
 export const metadata = {
   title: 'PRESSA - Fashion Digital Elevation',
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white">{children}</body>
+      <body className=" text-white">
+        <BgGradient/>
+          {children}
+        </body>
     </html>
   )
 }

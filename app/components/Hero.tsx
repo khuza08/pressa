@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
     <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
       <div className="text-center z-10 max-w-4xl px-6 flex-grow flex flex-col justify-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Where <span className="text-purple-400">Fashion</span> Meets <br />

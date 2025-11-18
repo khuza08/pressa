@@ -32,7 +32,7 @@ const projects: Project[] = [
 
 export default function OurWork() {
   return (
-    <section id="services" className="py-20 bg-gray-900">
+    <section id="services" className="py-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start mb-16">
           <div className="md:w-1/3 mb-8 md:mb-0">
@@ -41,7 +41,7 @@ export default function OurWork() {
           </div>
           <div className="md:w-2/3 grid md:grid-cols-3 gap-6">
             {projects.map((project) => (
-              <div key={project.id} className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors">
+              <div key={project.id} className="rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors">
                 <div className="w-full h-48 mb-4 flex items-center justify-center">
                   {project.icon === 'star' && (
                     <svg className="w-24 h-24 text-blue-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
