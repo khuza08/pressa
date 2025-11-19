@@ -34,7 +34,7 @@ const projects: Project[] = [
 
 export default function OurWork() {
   return (
-    <section id="services" className="py-20 min-h-screen">
+    <section id="services" className="py-40">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start mb-16">
           <div 
@@ -101,7 +101,7 @@ function Card3D({ project, index }: { project: Project; index: number }) {
       className="perspective-1000"
       style={{ perspective: '1000px' }}
       data-aos="fade-up"
-      data-aos-delay={index * 150}
+      data-aos-delay={index * 300}
       data-aos-duration="1000"
     >
       <div

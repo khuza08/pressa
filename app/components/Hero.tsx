@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="text-center z-10 max-w-4xl px-6 flex-grow flex flex-col justify-center">
         <h1 
           className="text-4xl md:text-6xl font-bold mb-6 leading-tight md:text-6xl text-3xl"
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-aos-duration="1000"
         >
           Where <span className="text-white/50">Fashion</span> Meets <br />
@@ -12,7 +12,7 @@ export default function Hero() {
         </h1>
         <p 
           className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl mx-auto md:text-xl text-base"
-          data-aos="fade-up"
+          data-aos="zoom-in-down"
           data-aos-delay="200"
           data-aos-duration="1000"
         >

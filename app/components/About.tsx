@@ -5,8 +5,8 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 
             className="text-xl font-bold mb-2 text-white/50 md:text-xl text-lg"
-            data-aos="fade-down"
-            data-aos-duration="800"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             ABOUT
           </h2>

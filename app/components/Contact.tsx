@@ -19,36 +19,36 @@ export default function Contact() {
               <h3 className="text-3xl text-white/80 font-semibold mb-2 md:text-3xl text-xl">SOCIAL MEDIA</h3>
               <div className="space-y-2">
                 <div 
-                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex justify-between items-center md:text-2xl text-lg"
+                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="300"
                   data-aos-duration="800"
                 >
                   <span>INSTAGRAM</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
                 <div 
-                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex justify-between items-center md:text-2xl text-lg"
+                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="400"
                   data-aos-duration="800"
                 >
                   <span>FACEBOOK</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
                 <div 
-                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex justify-between items-center md:text-2xl text-lg"
+                  className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="500"
                   data-aos-duration="800"
                 >
                   <span>TIKTOK</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
               </div>
