@@ -81,8 +81,8 @@ function Card3D({ project, index }: { project: Project; index: number }) {
     
     // Smooth glow position
     setGlowPosition({
-      x: (mouseX / rect.width) * 100,
-      y: (mouseY / rect.height) * 100
+      x: (mouseX / rect.width) * 200,
+      y: (mouseY / rect.height) * 200
     });
   };
 
