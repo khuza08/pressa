@@ -64,7 +64,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
     <>
       <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'backdrop-blur-lg bg-black/20 py-4' : 'py-6'
+          isScrolled ? 'backdrop-blur-lg py-4' : 'py-6'
         }`}
         role="navigation"
         aria-label="Main navigation"
