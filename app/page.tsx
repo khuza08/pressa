@@ -1,3 +1,4 @@
+// app/page.tsx
 "use client"
 
 import { useState, useEffect } from 'react';
@@ -13,11 +14,17 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+    const handleScroll = (e: any) => {
+      setIsScrolled(e.scroll > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // @ts-ignore - Lenis adds this event
+    window.lenis?.on('scroll', handleScroll);
+
+    return () => {
+      // @ts-ignore - Remove listener
+      window.lenis?.off('scroll', handleScroll);
+    };
   }, []);
 
   return (
