@@ -29,14 +29,24 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-20 h-screen">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div 
+          className="text-center mb-16"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h2 className="text-4xl font-bold mb-4 text-white/80 md:text-4xl text-2xl">What Our Clients Say</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 rounded-lg border border-white/20 bg-white/5">
+            <div 
+              key={index} 
+              className="p-6 rounded-lg border border-white/20 bg-white/5"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              data-aos-duration="1000"
+            >
               <p className="text-white/50 mb-6 md:text-base text-sm">{testimonial.quote}</p>
               <p className="text-white/80 text-right md:text-base text-sm">- {testimonial.author}</p>
             </div>
