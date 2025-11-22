@@ -74,6 +74,11 @@ export default function Navigation({ isScrolled }: NavigationProps) {
 
   return (
     <>
+      {/* Load Bebas Neue Font */}
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      `}</style>
+
       <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled ? 'backdrop-blur-lg py-4' : 'py-6'
@@ -85,7 +90,8 @@ export default function Navigation({ isScrolled }: NavigationProps) {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div 
-            className="text-xl text-white/80 font-bold"
+            className="text-2xl text-white/80 tracking-widest"
+            style={{ fontFamily: "'Bebas Neue', sans-serif" }}
             data-aos="fade-right"
             data-aos-delay="100"
           >

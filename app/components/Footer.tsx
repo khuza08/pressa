@@ -4,15 +4,20 @@ export default function Footer() {
       className="py-6 relative overflow-hidden"
       data-aos="zoom-in-up"
     >
+      {/* Load Bebas Neue Font */}
+      <style jsx>{`
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      `}</style>
+
       <div className="w-full flex flex-col items-center justify-center min-h-[50vh]">
-        {/* Full width PRESSA - tight spacing */}
+        {/* Full width PRESSA - BEBAS NEUE */}
         <div 
-          className="flex items-center justify-center w-full px-2"
+          className="flex items-center justify-center w-full overflow-hidden"
           data-aos="zoom-out-up"
           data-aos-delay="200"
         >
           {/* P */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto ">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto -mr-[3.5vw]">
             <defs>
               <linearGradient id="gradP" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -20,13 +25,13 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradP)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradP)', fontFamily: "'Bebas Neue', sans-serif" }}>
               P
             </text>
           </svg>
 
           {/* R */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto -mr-[2vw]">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto -mr-[3.5vw]">
             <defs>
               <linearGradient id="gradR" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -34,13 +39,13 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradR)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradR)', fontFamily: "'Bebas Neue', sans-serif" }}>
               R
             </text>
           </svg>
 
           {/* E */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto -mr-[2vw]">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto -mr-[3.5vw]">
             <defs>
               <linearGradient id="gradE" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -48,13 +53,13 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradE)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradE)', fontFamily: "'Bebas Neue', sans-serif" }}>
               E
             </text>
           </svg>
 
           {/* S */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto -mr-[2vw]">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto -mr-[3.5vw]">
             <defs>
               <linearGradient id="gradS1" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -62,13 +67,13 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradS1)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradS1)', fontFamily: "'Bebas Neue', sans-serif" }}>
               S
             </text>
           </svg>
 
           {/* S */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto -mr-[2vw]">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto -mr-[3.5vw]">
             <defs>
               <linearGradient id="gradS2" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -76,13 +81,13 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradS2)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradS2)', fontFamily: "'Bebas Neue', sans-serif" }}>
               S
             </text>
           </svg>
 
           {/* A */}
-          <svg viewBox="0 0 100 150" className="w-[15vw] h-auto">
+          <svg viewBox="0 0 100 150" className="w-[17vw] h-auto">
             <defs>
               <linearGradient id="gradA" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
@@ -90,7 +95,7 @@ export default function Footer() {
               </linearGradient>
             </defs>
             <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" 
-              style={{ fontSize: '120px', fontWeight: '900', fill: 'url(#gradA)', fontFamily: 'system-ui, sans-serif', letterSpacing: '-0.05em' }}>
+              style={{ fontSize: '130px', fontWeight: '400', fill: 'url(#gradA)', fontFamily: "'Bebas Neue', sans-serif" }}>
               A
             </text>
           </svg>
