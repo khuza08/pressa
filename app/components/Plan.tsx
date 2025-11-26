@@ -13,53 +13,62 @@ interface Plan {
 const plans: Plan[] = [
     {
         id: 1,
-        name: "Basic",
-        price: "$9/mo",
-        description: "Perfect for individuals getting started",
+        name: "Starter",
+        price: "$29/bulan",
+        description: "Ideal untuk pengusaha solo & proyek kecil",
         features: [
-            "Standard image generation",
-            "Basic style templates",
-            "500 monthly credits",
-            "Email support"
+            "5 template landing page siap pakai",
+            "Pengujian A/B dasar (1 varian)",
+            "500 tampilan halaman per bulan",
+            "Dukungan email",
+            "Optimasi SEO standar"
         ],
         unavailableFeatures: [
-            "Batch processing capabilities",
-            "AI-driven image enhancements",
-            "Priority customer support"
+            "Pengujian A/B lanjutan",
+            "Pemetaan domain khusus",
+            "Dukungan prioritas",
+            "Kolaborasi real-time",
+            "Analitik lanjutan"
         ]
     },
     {
         id: 2,
-        name: "Premium",
-        price: "$29/mo",
-        description: "For professionals and growing teams",
+        name: "Profesional",
+        price: "$99/bulan",
+        description: "Sempurna untuk bisnis berkembang & tim pemasaran",
         features: [
-            "High-resolution image generation",
-            "Customizable style templates",
-            "Batch processing capabilities",
-            "AI-driven image enhancements",
-            "2000 monthly credits",
-            "Priority customer support"
+            "25+ template yang dapat disesuaikan",
+            "Pengujian A/B lanjutan (3 varian)",
+            "2.000 tampilan halaman per bulan",
+            "Pemetaan domain khusus",
+            "Dukungan prioritas (respon 24 jam)",
+            "Integrasi CRM dasar",
+            "Analitik heatmap"
         ],
         unavailableFeatures: [
-            "Real-time collaboration tools",
-            "Advanced analytics dashboard"
+            "Manajer akun khusus",
+            "Keamanan tingkat enterprise",
+            "Kolaborasi real-time",
+            "Jam pengembangan khusus"
         ],
         popular: true
     },
     {
         id: 3,
         name: "Enterprise",
-        price: "$99/mo",
-        description: "For large organizations and teams",
+        price: "$299/bulan",
+        description: "Solusi lengkap untuk organisasi besar",
         features: [
-            "Unlimited image generation",
-            "Advanced customization options",
-            "Batch processing capabilities",
-            "AI-driven image enhancements",
-            "Real-time collaboration tools",
-            "Advanced analytics dashboard",
-            "Dedicated account manager"
+            "Landing page tanpa batas",
+            "Pengembangan khusus penuh",
+            "Pengujian A/B lanjutan (varian tak terbatas)",
+            "10.000+ tampilan halaman per bulan",
+            "Manajer akun khusus",
+            "Kolaborasi real-time",
+            "Dashboard analitik lanjutan",
+            "Keamanan tingkat enterprise",
+            "Integrasi API khusus",
+            "Dukungan prioritas (respon 4 jam)"
         ]
     }
 ];
