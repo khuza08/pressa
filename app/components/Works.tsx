@@ -15,7 +15,7 @@ const projects: Project[] = [
     title: "PRESSA E-COMMERCE",
     company: "E-COMMERCE",
     description: "Website E-Commerce khusus untuk Clothing brand",
-    image: "https://private-user-images.githubusercontent.com/142514648/518914684-53cde8a8-0e3e-4bd0-b4ff-bb3ea0ee4ffe.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQxMTU1ODMsIm5iZiI6MTc2NDExNTI4MywicGF0aCI6Ii8xNDI1MTQ2NDgvNTE4OTE0Njg0LTUzY2RlOGE4LTBlM2UtNGJkMC1iNGZmLWJiM2VhMGVlNGZmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEyNlQwMDAxMjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NDczY2Y1YzRhNWU5MjA2YWU2MmZmODE3NTQxOWIwZmVlNDNkZTJmNzkzNTE2OWVjMmE3MThjYjRjMWU4NDFlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.QQAi9iDfhoIJaQWELUCdo0OlD7l7gZrk0JMQwS9nMBo",
+    image: "works/ecom.jpeg",
     link: "https://github.com/khuza08/pressa-ecommerce"
   },
   {
