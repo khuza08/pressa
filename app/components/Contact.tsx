@@ -18,7 +18,10 @@ export default function Contact() {
             >
               <h3 className="text-3xl text-white/80 font-semibold mb-2 md:text-3xl text-xl">SOCIAL MEDIA</h3>
               <div className="space-y-2">
-                <div 
+                <a 
+                  href="https://www.instagram.com/pressastore?igsh=OTdyOWoxaW80YjFu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="300"
@@ -28,8 +31,11 @@ export default function Contact() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </div>
-                <div 
+                </a>
+                <a 
+                  href="https://www.facebook.com/share/17navBNoC8/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="400"
@@ -39,8 +45,11 @@ export default function Contact() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </div>
-                <div 
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@pressastore_?_r=1&_t=ZS-91iCXiMBvl6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="text-2xl text-white/50 hover:text-white/80 transition-colors cursor-pointer flex items-center gap-2 md:text-2xl text-lg"
                   data-aos="fade-left"
                   data-aos-delay="500"
@@ -50,7 +59,7 @@ export default function Contact() {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </div>
+                </a>
               </div>
             </div>
             <div
