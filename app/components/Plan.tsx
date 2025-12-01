@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { getWhatsAppSubscriptionUrl } from '@/lib/whatsapp';
 
 interface Plan {
     id: number;
@@ -266,6 +267,17 @@ function PriceCard({ plan, index }: { plan: Plan; index: number }) {
                         }}
                     >
                         <button
+                            onClick={() => {
+                                // Using a placeholder phone number - this should be replaced with your actual business number
+                                const phoneNumber = '6283129265430'; // Replace with your actual WhatsApp number
+                                const whatsappUrl = getWhatsAppSubscriptionUrl(
+                                    phoneNumber,
+                                    plan.name,
+                                    plan.price,
+                                    plan.features
+                                );
+                                window.open(whatsappUrl, '_blank');
+                            }}
                             className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-300 ${plan.popular
                                     ? 'bg-yellow-500/10 text-white hover:bg-yellow-500/20'
                                     : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
