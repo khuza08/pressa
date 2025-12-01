@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "Anon",
     company: "E-COMMERCE",
     description: "Website E-Commerce khusus untuk Clothing brand",
-    image: "works/anon.jpeg",
+    image: "works/anon.png",
     link: "https://codewithsadee.github.io/anon-ecommerce-website/"
   },
   {
@@ -31,7 +31,7 @@ const projects: Project[] = [
     title: "RACXSTUDIO",
     company: "PORTFOLIO",
     description: "Website Portfolio",
-    image: "works/ecom2.jpeg",
+    image: "works/ecom2.png",
     link: "https://racxstudio.vercel.app/"
   }
 ];
