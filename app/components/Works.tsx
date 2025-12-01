@@ -12,7 +12,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "PRESSA E-COMMERCE",
+    title: "PRESSA",
     company: "E-COMMERCE",
     description: "Website E-Commerce khusus untuk Clothing brand",
     image: "works/ecom.jpeg",
@@ -20,19 +20,19 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Project Title",
-    company: "Company Profile",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-    link: "https://example-project-2.com"
+    title: "Anon",
+    company: "E-COMMERCE",
+    description: "Website E-Commerce khusus untuk Clothing brand",
+    image: "works/anon.jpeg",
+    link: "https://codewithsadee.github.io/anon-ecommerce-website/"
   },
   {
     id: 3,
-    title: "Project Title",
-    company: "Company Profile",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop",
-    link: "https://example-project-3.com"
+    title: "RACXSTUDIO",
+    company: "PORTFOLIO",
+    description: "Website Portfolio",
+    image: "works/ecom2.jpeg",
+    link: "https://racxstudio.vercel.app/"
   }
 ];
 
@@ -46,8 +46,8 @@ export default function OurWork() {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h2 className="text-4xl font-bold text-white/80 md:text-4xl text-2xl">OUR WORK</h2>
-            <p className="text-xl text-white/50 md:text-xl text-lg">CRAFTED WITH LOVE</p>
+            <h2 className="font-bold text-white/80 md:text-4xl text-2xl">OUR WORK</h2>
+            <p className="text-white/50 md:text-xl text-lg">CRAFTED WITH LOVE</p>
           </div>
           <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
@@ -152,9 +152,9 @@ function Card3D({ project, index }: { project: Project; index: number }) {
           </div>
           
           {/* Bagian konten yang fleksibel */}
-          <div className="flex-grow flex flex-col">
+          <div className="grow flex flex-col">
             <h3
-              className="text-xl font-semibold mb-2 text-white md:text-xl text-lg transition-all duration-300"
+              className="font-semibold mb-2 text-white md:text-xl text-lg transition-all duration-300"
               style={{
                 transform: isHovered ? 'translateZ(30px)' : 'translateZ(0px)',
                 textShadow: isHovered ? '0 2px 10px rgba(200, 200, 200, 0.1)' : 'none'
@@ -171,7 +171,7 @@ function Card3D({ project, index }: { project: Project; index: number }) {
               {project.company}
             </p>
             <p
-              className="text-white/50 text-sm mb-4 line-clamp-3 transition-all duration-300 flex-grow"
+              className="text-white/50 text-sm mb-4 line-clamp-3 transition-all duration-300 grow"
               style={{
                 transform: isHovered ? 'translateZ(20px)' : 'translateZ(0px)'
               }}
